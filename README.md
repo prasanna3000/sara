@@ -141,4 +141,4 @@ The uploaded test data is used only for evaluation. The saved models are loaded 
 The deployed application allows the user to select a model and view its performance on the uploaded test dataset.
 
 **Streamlit App:**  
-`<PASTE YOUR STREAMLIT COMMUNITY CLOUD LINK HERE>`
+`https://sara-spam-analyzer.streamlit.app`

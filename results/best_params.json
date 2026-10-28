@@ -1,0 +1,24 @@
+{
+  "seed": 7319,
+  "sklearn": "1.9.1",
+  "best_params": {
+    "Logistic Regression": {
+      "clf__C": 0.1
+    },
+    "Decision Tree": {
+      "clf__max_depth": 10,
+      "clf__min_samples_leaf": 1
+    },
+    "KNN": {
+      "clf__n_neighbors": 15,
+      "clf__weights": "distance"
+    },
+    "Naive Bayes": {
+      "clf__var_smoothing": 1e-06
+    },
+    "Support Vector Machine": {
+      "clf__estimator__C": 10,
+      "clf__estimator__gamma": 0.01
+    }
+  }
+}

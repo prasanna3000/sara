@@ -1,0 +1,390 @@
+:root {
+    /* =====================================================
+       SARA COLOUR PALETTE
+       ===================================================== */
+
+    --color-primary: #0473ea;
+    --color-primary-dark: #0258c4;
+    --color-primary-light: #3d95f5;
+
+    --color-success: #207e00;
+    --color-success-bg: #edf8e8;
+    --color-success-light: #38a000;
+
+    --color-warning: #966800;
+    --color-warning-bg: #fff6e4;
+    --color-warning-light: #fcce5b;
+
+    --color-danger: #d50000;
+    --color-danger-bg: #fdeaea;
+    --color-danger-light: #e63b44;
+
+    --color-info: #0f62c9;
+
+    --color-text-primary: #0f2137;
+    --color-text-secondary: #344d6e;
+    --color-text-subtle: #64748b;
+    --color-text-muted: #7a8fa6;
+
+    --color-bg-base: #f7f9fc;
+    --color-bg-surface: #ffffff;
+    --color-bg-sunken: #edf1f8;
+    --color-surface-alt: #f2f5fb;
+
+    --color-border: #c5d0e0;
+    --color-border-subtle: #dce4f0;
+    --color-border-focus: #0473ea;
+
+    --shadow-sm:
+        0 1px 3px rgba(15, 33, 55, 0.08);
+
+    --shadow-md:
+        0 4px 12px rgba(15, 33, 55, 0.10);
+
+    --shadow-lg:
+        0 8px 24px rgba(15, 33, 55, 0.12);
+}
+
+
+/* =========================================================
+   MAIN APPLICATION
+   ========================================================= */
+
+.stApp {
+    background: var(--color-bg-base);
+    color: var(--color-text-primary);
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    color: var(--color-text-primary) !important;
+    font-weight: 800 !important;
+}
+
+h2,
+h3 {
+    color: var(--color-text-primary) !important;
+    font-weight: 700 !important;
+}
+
+p {
+    color: var(--color-text-secondary);
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: var(--color-bg-surface) !important;
+    border-right: 1px solid var(--color-border-subtle);
+}
+
+section[data-testid="stSidebar"] > div {
+    background: var(--color-bg-surface) !important;
+}
+
+
+/* Sidebar title */
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: var(--color-text-primary) !important;
+}
+
+
+/* Sidebar description */
+
+section[data-testid="stSidebar"] .stCaption {
+    color: var(--color-text-muted) !important;
+}
+
+
+/* =========================================================
+   SIDEBAR DIVIDER
+   ========================================================= */
+
+section[data-testid="stSidebar"] hr {
+    border-color: var(--color-border-subtle);
+}
+
+
+/* =========================================================
+   FILE UPLOADER
+   ========================================================= */
+
+section[data-testid="stSidebar"]
+[data-testid="stFileUploader"] {
+    background: var(--color-surface-alt) !important;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+/* Upload button */
+
+section[data-testid="stSidebar"]
+[data-testid="stFileUploader"] button {
+    background: var(--color-primary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 7px !important;
+}
+
+section[data-testid="stSidebar"]
+[data-testid="stFileUploader"] button:hover {
+    background: var(--color-primary-dark) !important;
+}
+
+
+/* =========================================================
+   SELECTBOX
+   ========================================================= */
+
+div[data-baseweb="select"] > div {
+    background: var(--color-bg-surface) !important;
+    border-color: var(--color-border) !important;
+    border-radius: 8px !important;
+}
+
+div[data-baseweb="select"] > div:hover {
+    border-color: var(--color-primary) !important;
+}
+
+
+/* =========================================================
+   DOWNLOAD BUTTON
+   ========================================================= */
+
+.stDownloadButton button {
+    background: var(--color-primary) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease;
+}
+
+.stDownloadButton button:hover {
+    background: var(--color-primary-dark) !important;
+    box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================================
+   INFO BOX
+   ========================================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 10px !important;
+}
+
+
+/* =========================================================
+   METRIC CARDS
+   ========================================================= */
+
+div[data-testid="stMetric"] {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: var(--shadow-sm);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+
+/* Metric labels */
+
+div[data-testid="stMetric"] label {
+    color: var(--color-text-secondary) !important;
+}
+
+
+/* Metric values */
+
+div[data-testid="stMetricValue"] {
+    color: var(--color-primary) !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   CONTAINERS / CARDS
+   ========================================================= */
+
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* =========================================================
+   TABS
+   ========================================================= */
+
+button[data-baseweb="tab"] {
+    color: var(--color-text-secondary) !important;
+    font-weight: 600 !important;
+}
+
+button[data-baseweb="tab"]:hover {
+    color: var(--color-primary) !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: var(--color-primary) !important;
+    font-weight: 700 !important;
+}
+
+div[data-baseweb="tab-highlight"] {
+    background: var(--color-primary) !important;
+}
+
+
+/* =========================================================
+   DATAFRAME
+   ========================================================= */
+
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SUCCESS
+   ========================================================= */
+
+div[data-testid="stAlert"][kind="success"] {
+    background: var(--color-success-bg) !important;
+    border-left: 4px solid var(--color-success) !important;
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+div[data-testid="stAlert"][kind="warning"] {
+    background: var(--color-warning-bg) !important;
+    border-left: 4px solid var(--color-warning) !important;
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+div[data-testid="stAlert"][kind="error"] {
+    background: var(--color-danger-bg) !important;
+    border-left: 4px solid var(--color-danger) !important;
+}
+
+
+/* =========================================================
+   INFO
+   ========================================================= */
+
+div[data-testid="stAlert"][kind="info"] {
+    background: #edf5ff !important;
+    border-left: 4px solid var(--color-primary) !important;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.stApp h3 {
+    position: relative;
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
+hr {
+    border-color: var(--color-border-subtle) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.stButton button {
+    border: 1px solid var(--color-primary) !important;
+    color: var(--color-primary) !important;
+    background: var(--color-bg-surface) !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+.stButton button:hover {
+    background: var(--color-primary) !important;
+    color: white !important;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    color: var(--color-primary) !important;
+}
+
+a:hover {
+    color: var(--color-primary-dark) !important;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-sunken);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
